@@ -13,8 +13,12 @@ function timeString(str) {
   // get minutes and seconds
     var min = parseInt(newStr[0]);
     var sec = parseInt(newStr[1]);
-    console.log(sec)
+    output += (min * 60) + sec;
   }
+  // get hours, minutes, and seconds
+    var hour = Math.floor(output / 3600);
+    var min  = Math.floor(output % 3600 / 60);
+    var seconds = Math.floor(output % 60);
 
 }
 
